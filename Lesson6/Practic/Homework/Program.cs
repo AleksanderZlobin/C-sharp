@@ -54,7 +54,7 @@
 //     Console.Write($"{i * i * i} ");
 
 
-// Task # https://acmp.ru/asp/do/index.asp?main=task&id_course=1&id_section=5&id_topic=113&id_problem=695
+// Task # Additional https://acmp.ru/asp/do/index.asp?main=task&id_course=1&id_section=5&id_topic=113&id_problem=695
 // В фермерском хозяйстве в Карелии выращивают чернику. Она растет на круглой грядке, 
 // причем кусты высажены только по окружности. Таким образом, у каждого куста есть ровно 
 // два соседних. Всего на грядке растет N кустов.
@@ -65,4 +65,20 @@
 // непосредственно перед некоторым кустом, собирает ягоды с этого куста и с двух соседних с ним.
 // Напишите программу для нахождения максимального числа ягод, которое может собрать за один заход 
 // собирающий модуль, находясь перед некоторым кустом заданной во входном файле грядки.
+
+// Console.Clear();
+// Console.Write("Введите число элементов: ");
+// int n = int.Parse(Console.ReadLine()!);
+// int[] array = new int[n];
+// for (int i = 0; i < n; i++)
+//     array[i] = int.Parse(Console.ReadLine()!);
+// Console.WriteLine($"[{string.Join(", ", array)}]");
+// int max_summa = 0;
+// for (int i = 0; i < array.Length; i++)
+// {
+//     if (max_summa < array[i] + array[(i + 1) % 5] + array[(i + 2) % 5])
+//         max_summa = array[i] + array[(i + 1) % 5] + array[(i + 2) % 5];
+// }
+// Console.WriteLine(max_summa);
+
 
