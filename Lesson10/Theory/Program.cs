@@ -50,3 +50,20 @@
 // Console.Clear();
 // string result = MaxNumbers(10, 10);
 // Console.WriteLine(result);
+
+
+// Генерация дробных чисел
+
+// void InputArray(double[] array)
+// {
+//     int end = 30, begin = 10;
+//     for (int i = 0; i < array.Length; i++)
+//         array[i] = Math.Round(new Random().NextDouble() * (end - begin) + begin, 2);
+// }
+
+// Console.Clear();
+// Console.Write("Введите кол-во элементов массива: ");
+// int n = int.Parse(Console.ReadLine()!);
+// double[] array = new double[n];
+// InputArray(array);
+// Console.WriteLine($"Начальный массив: [{string.Join(", ", array)}]");
