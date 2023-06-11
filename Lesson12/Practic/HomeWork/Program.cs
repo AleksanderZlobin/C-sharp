@@ -36,10 +36,22 @@
 
 
 // Task # 1 Additional 
-// Дана строка, состоящая из N попарно различных символов. Требуется вывести все перестановки символов данной строки.
+// Дана строка, состоящая из N попарно различных символов. Требуется
+// вывести все перестановки символов данной строки.
 
 
 
 
 // Task # 2 Additional
-// По целочисленным координатам вершин треугольника (x1,y1), (x2,y2) и (x3,y3) требуется вычислить его площадь.
+// По целочисленным координатам вершин треугольника (x1,y1), (x2,y2) 
+// и (x3,y3) требуется вычислить его площадь.
+
+
+// Console.Clear();
+// int[] size = Console.ReadLine()!.Split().Select(x => int.Parse(x)).ToArray();
+// double a = Math.Sqrt(Math.Pow(size[0] - size[2], 2) + Math.Pow(size[1] - size[3], 2));
+// double b = Math.Sqrt(Math.Pow(size[0] - size[4], 2) + Math.Pow(size[1] - size[5], 2));
+// double c = Math.Sqrt(Math.Pow(size[4] - size[2], 2) + Math.Pow(size[3] - size[5], 2));
+// double p = (a + b + c) / 2;
+// double S = Math.Sqrt(p * (p - a) * (p - b) * (p - c));
+// Console.WriteLine($"Результат: {Math.Round(S, 2)}");
