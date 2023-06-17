@@ -136,6 +136,54 @@
 // Требуется транспонировать ее относительно горизонтали.
 
 
+// void InputMatrix(int[,] matrix)
+// {
+//     for (int i = 0; i < matrix.GetLength(0); i++)
+//     {
+//         for (int j = 0; j < matrix.GetLength(1); j++)
+//             matrix[i, j] = new Random().Next(1, 31); // [1; 30]
+//     }
+// }
+
+
+// void PrintMatrix(int[,] matrix)
+// {
+//     for (int i = 0; i < matrix.GetLength(0); i++)
+//     {
+//         for (int j = 0; j < matrix.GetLength(1); j++)
+//             Console.Write($"{matrix[i, j]} \t");
+//         Console.WriteLine();
+//     }
+// }
+
+
+// void ReverseMatrix(int[,] matrix)
+// {
+//     for (int i = 0; i < matrix.GetLength(0) / 2; i++)
+//     {
+//         for (int j = 0; j < matrix.GetLength(1); j++)
+//         {
+//             int temp = matrix[i, j];
+//             matrix[i, j] = matrix[matrix.GetLength(0) - 1 - i, j];
+//             matrix[matrix.GetLength(0) - 1 - i, j] = temp;
+//         }
+//     }
+// }
+
+
+// Console.Clear();
+// Console.Write("Введите размер массива: ");
+// int[] size = Console.ReadLine()!.Split().Select(x => int.Parse(x)).ToArray();
+// int[,] matrix = new int[size[0], size[1]];
+// InputMatrix(matrix);
+// Console.WriteLine("___________________________");
+// PrintMatrix(matrix);
+// Console.WriteLine("___________________________");
+// ReverseMatrix(matrix);
+// PrintMatrix(matrix);
+
+
+
 // Task # Additional 2 Миша и негатив.
 // Миша уже научился хорошо фотографировать и недавно увлекся программированием. 
 // Первая программа, которую он написал, позволяет формировать негатив бинарного
@@ -152,6 +200,59 @@
 // Требуется написать программу, которая в качестве входных данных использует исходное бинарное
 // черно-белое изображение и полученный Мишиной программой негатив, и на основе этого определяет 
 // количество пикселей, в которых допущена ошибка.
+
+
+// void InputMatrixFirst(int[,] matrixFirst)
+// {
+//     for (int i = 0; i < matrixFirst.GetLength(0); i++)
+//     {
+//         string? input = Convert.ToString(Console.ReadLine()!);
+//         for (int j = 0; j < input.Length; j++)
+//         {
+//             matrixFirst[i, j] = input[j];
+//         }
+//     }
+// }
+
+
+// void InputMatrixSecond(int[,] matrixSecond)
+// {
+//     for (int i = 0; i < matrixSecond.GetLength(0); i++)
+//     {
+//         string input = Convert.ToString(Console.ReadLine()!);
+//         for (int j = 0; j < input.Length; j++)
+//         {
+//             matrixSecond[i, j] = input[j];
+//         }
+//     }
+// }
+
+
+// void ReleaseMatrix(int[,] matrixFirst, int[,] matrixSecond)
+// {
+//     int count = 0;
+//     for (int i = 0; i < matrixSecond.GetLength(0); i++)
+//     {
+//         for (int j = 0; j < matrixSecond.GetLength(1); j++)
+//         {
+//             if (matrixFirst[i, j] == matrixSecond[i, j])
+//                 count++;
+//         }
+//     }
+//     Console.WriteLine($"{count}");
+// }
+
+
+// Console.Clear();
+// Console.Write("Введите кол-во строк и столбцов: ");
+// int[] num = Console.ReadLine()!.Split().Select(x => int.Parse(x)).ToArray(); // ввод двух чисел в одну строку
+// int[,] matrixFirst = new int[num[0], num[1]];
+// int[,] matrixSecond = new int[num[0], num[1]];
+// InputMatrixFirst(matrixFirst);
+// Console.WriteLine();
+// InputMatrixSecond(matrixSecond);
+// ReleaseMatrix(matrixFirst, matrixSecond);
+
 
 
 // Task # Additional 3 Заполнение диагоналями.
